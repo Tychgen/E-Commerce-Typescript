@@ -5,7 +5,7 @@ import Products from './Products';
 import Post from './Post';
 import ShopCart from './ShopCart';
 import Wishlist from './Wishlist';
-import Login from '../components/login components/Login';
+import Login from './Login';
 
 
 
@@ -21,7 +21,7 @@ const App = () => {
       
         {!isLoginPage && <NavBar />}
         <Routes>
-          {/* <Route index={true} element={<Login/>}/> */}
+          <Route index={true} element={<Login/>}/>
           <Route path="/home" element={<Products/>}/>
           <Route path="/product/:id" element={<Post/>} />
           <Route path='/wishlist' element={<Wishlist/>}/>
